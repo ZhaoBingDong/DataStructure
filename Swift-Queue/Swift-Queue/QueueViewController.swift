@@ -50,14 +50,14 @@ class QueueViewController: UIViewController {
         let idx  = arc4random_uniform(UInt32(self.array.count))
         let name = array[Int(idx)]
         
-        
         let itail = self.myQueue?.queue_Tail
         
         let label = self.view.viewWithTag(itail!+100) as? UILabel
         
         label?.text = name
         
-        self.myQueue?.enQueue(name)
+        // 入队操作 从队列尾插入一个元素到队列中
+        let _ = self.myQueue?.enQueue(name)
 
     }
     
@@ -85,8 +85,9 @@ class QueueViewController: UIViewController {
         let head = self.myQueue?.queue_Head
         let label = self.view.viewWithTag(head!+100) as? UILabel
         label?.text = "\((label?.tag)!-100)"
-
-        self.myQueue?.deQueue()
+        
+        // 出队操作.从队列头取出一个元素
+        let _ = self.myQueue?.deQueue()
     
     }
     
