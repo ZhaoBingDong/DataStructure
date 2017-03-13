@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     @IBAction func queueClick(_ sender: UIButton) {
         
+        let queueViewController = QueueViewController()
+        self.navigationController?.pushViewController(queueViewController, animated: true)
         
     }
     
@@ -32,43 +34,43 @@ class ViewController: UIViewController {
     /// 验证和测试队列的代码
     func myQueueTest() {
         
-        // 环形队列 最大容量是4 根据先进先出原则进行取值操作
-        let myQueue = MyQueue(capacity: 4)
-        
-        
-        let _ =  myQueue.enQueue(10)
-        let _ =  myQueue.enQueue(20)
-        let _ =  myQueue.enQueue(30)
-        let _ =  myQueue.enQueue(40)
-        let _ =  myQueue.enQueue(50)
-        // 查看队列的元素
-        myQueue.queueTraverse()
-        // 从队列头中取出一个元素
-        var sum = myQueue.deQueue()
-        
-        print("出队一个元素 \(sum)")
-        
-        // 从队列头中取出一个元素
-        
-        sum = myQueue.deQueue()
-        print("出队一个元素 \(sum)")
-        
-        myQueue.queueTraverse()
-        
-        myQueue.clearQueue()
-        
-        // 往队列中添加一个元素 插入到队列尾部位置
-        let _ = myQueue.enQueue(60)
-        
-        myQueue.queueTraverse()
-        
-        // 从队列中取出一个元素
-        sum = myQueue.deQueue()
-        
-        
-        print("出队一个元素 \(sum)")
-        
-        myQueue.queueTraverse()
+//        // 环形队列 最大容量是4 根据先进先出原则进行取值操作
+//        let myQueue = MyQueue(capacity: 4)
+//        
+//        
+//        let _ =  myQueue.enQueue(10)
+//        let _ =  myQueue.enQueue(20)
+//        let _ =  myQueue.enQueue(30)
+//        let _ =  myQueue.enQueue(40)
+//        let _ =  myQueue.enQueue(50)
+//        // 查看队列的元素
+//        myQueue.queueTraverse()
+//        // 从队列头中取出一个元素
+//        var sum = myQueue.deQueue()
+//        
+//        print("出队一个元素 \(sum)")
+//        
+//        // 从队列头中取出一个元素
+//        
+//        sum = myQueue.deQueue()
+//        print("出队一个元素 \(sum)")
+//        
+//        myQueue.queueTraverse()
+//        
+//        myQueue.clearQueue()
+//        
+//        // 往队列中添加一个元素 插入到队列尾部位置
+//        let _ = myQueue.enQueue(60)
+//        
+//        myQueue.queueTraverse()
+//        
+//        // 从队列中取出一个元素
+//        sum = myQueue.deQueue()
+//        
+//        
+//        print("出队一个元素 \(sum)")
+//        
+//        myQueue.queueTraverse()
 
         
     }

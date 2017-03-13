@@ -13,11 +13,11 @@ import UIKit
 
 class MyQueue {
     
-    private var queue_Capacity : Int = 0 // 队列的容量
-    private var queue_Length : Int = 0; // 队列元素的长度
-    private var queue : Array<Int>? // 队列对象
-    private var queue_Head : Int = 0 // 队列头位置
-    private var queue_Tail :Int = 0 // 队列尾的位置
+    var queue_Capacity : Int = 0 // 队列的容量
+    var queue_Length : Int = 0; // 队列元素的长度
+    private var queue : Array<String>? // 队列对象
+    var queue_Head : Int = 0 // 队列头位置
+    var queue_Tail :Int = 0 // 队列尾的位置
     convenience init(capacity : Int) { // 构造函数创建出一个队列数据模型来
         self.init()
         queue_Capacity  = capacity
@@ -33,7 +33,7 @@ class MyQueue {
     /// 清空队列
     open func clearQueue() {
     
-        self.queue      = Array<Int>(repeating: 0, count: queue_Capacity)
+        self.queue      =  Array<String>(repeating: "", count: queue_Capacity)
         queue_Length    = 0
         queue_Head      = 0
         queue_Tail      = 0
@@ -71,7 +71,7 @@ class MyQueue {
     
     /// 往队列中添加一个元素
     
-    open func enQueue(_ element : Int) -> Bool {
+    open func enQueue(_ element : String) -> Bool {
         
         if queueFull() {
             return false
@@ -87,7 +87,7 @@ class MyQueue {
     
     /// 从队列中取出来一个元素 如果队列为空 那么 取出来的为 nil
     
-    open func deQueue() -> Int? {
+    open func deQueue() -> String? {
         
         if queueEmpty() {
             return nil
