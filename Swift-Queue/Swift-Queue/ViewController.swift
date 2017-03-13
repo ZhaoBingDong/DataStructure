@@ -17,6 +17,18 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func queueClick(_ sender: UIButton) {
+        
+        
+    }
+    
+    @IBAction func stackClick(_ sender: Any) {
+        
+        let stackViewController = StackViewController()
+        
+        self.navigationController?.pushViewController(stackViewController, animated: true)
+        
+    }
     /// 验证和测试队列的代码
     func myQueueTest() {
         

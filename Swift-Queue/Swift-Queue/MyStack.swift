@@ -14,11 +14,12 @@ class MyStack {
     private var stacks : [String]?
     private var stacklength : Int = 0
     private var stackCapacity : Int = 0;
-    private var stackTop : Int = 0;
+    open var stackTop : Int = 0;
     convenience init(_ capacity : Int) {
         self.init()
         stackCapacity = capacity;
         clearStacks()
+        
     }
     
     /// 栈是否为空
@@ -34,7 +35,7 @@ class MyStack {
     /// 清空栈所有元素
     open func clearStacks() {
         
-        self.stacks = Array<String>.init(repeating: "", count: stackCapacity)
+        self.stacks = Array<String>(repeating: "", count: stackCapacity)
         stacklength = 0
         stackTop    = 0
 
@@ -48,10 +49,8 @@ class MyStack {
             return
         }
         
-        for i in 0..<stackTop {
-            
+        for i in 0..<stackTop {            
             print("\n\((self.stacks?[i])!),\n")
-            
         }
         
     }

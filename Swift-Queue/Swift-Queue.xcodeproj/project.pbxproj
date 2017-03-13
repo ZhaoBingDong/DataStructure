@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2D5F5D081E7630D10094D56B /* MyStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5F5D071E7630D10094D56B /* MyStack.swift */; };
+		2D5F5D0B1E76385B0094D56B /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5F5D091E76385B0094D56B /* StackViewController.swift */; };
+		2D5F5D0C1E76385B0094D56B /* StackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5F5D0A1E76385B0094D56B /* StackViewController.xib */; };
 		2DF4A8061E754194009E799C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4A8051E754194009E799C /* AppDelegate.swift */; };
 		2DF4A8081E754194009E799C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4A8071E754194009E799C /* ViewController.swift */; };
 		2DF4A80B1E754194009E799C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF4A8091E754194009E799C /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		2D5F5D071E7630D10094D56B /* MyStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStack.swift; sourceTree = "<group>"; };
+		2D5F5D091E76385B0094D56B /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
+		2D5F5D0A1E76385B0094D56B /* StackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StackViewController.xib; sourceTree = "<group>"; };
 		2DF4A8021E754194009E799C /* Swift-Queue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Queue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF4A8051E754194009E799C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DF4A8071E754194009E799C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				2DF4A8051E754194009E799C /* AppDelegate.swift */,
 				2DF4A8071E754194009E799C /* ViewController.swift */,
 				2D5F5D071E7630D10094D56B /* MyStack.swift */,
+				2D5F5D091E76385B0094D56B /* StackViewController.swift */,
+				2D5F5D0A1E76385B0094D56B /* StackViewController.xib */,
 				2DF4A8091E754194009E799C /* Main.storyboard */,
 				2DF4A80C1E754194009E799C /* Assets.xcassets */,
 				2DF4A80E1E754194009E799C /* LaunchScreen.storyboard */,
@@ -242,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF4A8101E754194009E799C /* LaunchScreen.storyboard in Resources */,
+				2D5F5D0C1E76385B0094D56B /* StackViewController.xib in Resources */,
 				2DF4A80D1E754194009E799C /* Assets.xcassets in Resources */,
 				2DF4A80B1E754194009E799C /* Main.storyboard in Resources */,
 			);
@@ -270,6 +277,7 @@
 			files = (
 				2D5F5D081E7630D10094D56B /* MyStack.swift in Sources */,
 				2DF4A8081E754194009E799C /* ViewController.swift in Sources */,
+				2D5F5D0B1E76385B0094D56B /* StackViewController.swift in Sources */,
 				2DF4A8061E754194009E799C /* AppDelegate.swift in Sources */,
 				2DF4A8651E755470009E799C /* MyQueue.swift in Sources */,
 			);
