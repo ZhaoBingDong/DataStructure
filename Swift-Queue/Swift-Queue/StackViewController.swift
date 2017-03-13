@@ -54,6 +54,15 @@ class StackViewController: UIViewController {
         
     }
 
+    @IBAction func clearStacks(_ sender: UIButton) {
+        
+        for view in self.contentView.subviews {
+            view.removeFromSuperview()
+        }
+        
+        self.stack?.clearStacks()
+        
+    }
     @IBAction func pop(_ sender: UIButton) {
         
         if (self.stack?.stackEmpty())! {

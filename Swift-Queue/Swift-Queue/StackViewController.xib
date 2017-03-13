@@ -36,10 +36,17 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWd-4T-bM8">
-                    <rect key="frame" x="307" y="591" width="31" height="30"/>
+                    <rect key="frame" x="292" y="591" width="46" height="30"/>
                     <state key="normal" title="出栈"/>
                     <connections>
                         <action selector="pop:" destination="-1" eventType="touchUpInside" id="mdn-ri-0BB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ng-O4-WAl">
+                    <rect key="frame" x="164" y="591" width="46" height="30"/>
+                    <state key="normal" title="清空栈"/>
+                    <connections>
+                        <action selector="clearStacks:" destination="-1" eventType="touchUpInside" id="7L1-fr-sY7"/>
                     </connections>
                 </button>
             </subviews>
@@ -47,10 +54,14 @@
             <constraints>
                 <constraint firstItem="bWd-4T-bM8" firstAttribute="top" secondItem="yym-17-Nu0" secondAttribute="top" id="91d-yj-EXN"/>
                 <constraint firstItem="l3A-Z7-2zo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KIs-fv-nJ9"/>
+                <constraint firstItem="bWd-4T-bM8" firstAttribute="height" secondItem="8Ng-O4-WAl" secondAttribute="height" id="bC4-6g-Jha"/>
+                <constraint firstItem="8Ng-O4-WAl" firstAttribute="top" secondItem="yym-17-Nu0" secondAttribute="top" id="gYo-fk-JJe"/>
                 <constraint firstItem="yym-17-Nu0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="64" id="hcf-Tf-4fj"/>
                 <constraint firstItem="bWd-4T-bM8" firstAttribute="trailing" secondItem="l3A-Z7-2zo" secondAttribute="trailing" id="jFh-nh-zgc"/>
+                <constraint firstItem="bWd-4T-bM8" firstAttribute="width" secondItem="8Ng-O4-WAl" secondAttribute="width" id="mF5-on-Nfv"/>
                 <constraint firstItem="yym-17-Nu0" firstAttribute="top" secondItem="l3A-Z7-2zo" secondAttribute="bottom" constant="57" id="mgi-xS-7fL"/>
                 <constraint firstItem="l3A-Z7-2zo" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="pcT-UW-7Be"/>
+                <constraint firstItem="8Ng-O4-WAl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xJi-8w-z3M"/>
             </constraints>
         </view>
     </objects>
