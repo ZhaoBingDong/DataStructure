@@ -12,8 +12,12 @@ class ViewController: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-//       myQueueTest()
-            myStack()
+////       myQueueTest()
+////            myStack()
+//        let age = 10
+//        print(1...5)
+//     
+        
         
     }
     

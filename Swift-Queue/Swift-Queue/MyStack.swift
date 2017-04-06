@@ -80,7 +80,7 @@ class MyStack {
             stackTop-=1;
             stacklength-=1;
             let string = self.stacks?[stackTop]
-            print("出栈一个元素\(string)")
+            print("出栈一个元素\(String(describing: string))")
             return string
         }
         

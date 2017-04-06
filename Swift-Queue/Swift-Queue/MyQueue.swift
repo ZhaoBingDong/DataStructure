@@ -64,7 +64,7 @@ class MyQueue {
       
         for i in start..<total {
            let sum = self.queue?[i%queue_Capacity]
-            print("\n\(sum),\n")
+            print("\n\(String(describing: sum)),\n")
         }
         
     }
