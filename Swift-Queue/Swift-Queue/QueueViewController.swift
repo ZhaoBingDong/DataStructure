@@ -13,11 +13,11 @@ import UIKit
 class QueueViewController: UIViewController {
 
     func degres_randians(_ angle : CGFloat) -> CGFloat {
-        
-        return angle*CGFloat(M_PI)/(180.0)
+        let Pi : Double  = .pi
+        return angle*CGFloat(Pi)/(180.0)
     }
     var array : [String] = [String]()
-    var myQueue : MyQueue?
+    var myQueue : MyQueue<String>?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -97,7 +97,8 @@ class QueueViewController: UIViewController {
         
         let quequeCapacity : Int = self.myQueue?.queue_Capacity ?? 0
         let angle                = 360.0/CGFloat(quequeCapacity)
-        let currentAngel         = (angle*CGFloat(M_PI)) / 180.0;
+
+        let currentAngel         = degres_randians(angle)
         
         for index in 0..<quequeCapacity {
             
