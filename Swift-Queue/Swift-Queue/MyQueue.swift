@@ -18,8 +18,7 @@ public class MyQueue<T> {
     fileprivate var queue : Array<T>? // 队列对象
     var queue_Head : Int = 0 // 队列头位置
     var queue_Tail :Int = 0 // 队列尾的位置
-    convenience init(capacity : Int) { // 构造函数创建出一个队列数据模型来
-        self.init()
+    init(capacity : Int) { // 构造函数创建出一个队列数据模型来
         queue_Capacity  = capacity
         self.clearQueue()
     }
