@@ -45,7 +45,7 @@ extension UIColor {
 class StackViewController: UIViewController {
 
     @IBOutlet weak var contentView: UIView!
-    var stack : MyStack?
+    var stack : MyStack<String>?
     override func viewDidLoad() {
         super.viewDidLoad()
 

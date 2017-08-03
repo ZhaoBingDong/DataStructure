@@ -82,11 +82,11 @@ class ViewController: UIViewController {
     func myStack() {
         
         
-        let stack = MyStack(5)
+        let stack = MyStack<Int>(5)
         // 入栈3个元素
-        let _ = stack.push("董招兵")
-        let _ = stack.push("大兵")
-        let _ = stack.push("张三")
+        let _ = stack.push(0)
+        let _ = stack.push(1)
+        let _ = stack.push(2)
 
         stack.stackTraverse()
         // 出栈一个元素 根据先进后出,后进先出的原理 那么 张三这个元素会被出栈 ,栈中只剩下 "董招兵","大兵两个元素"

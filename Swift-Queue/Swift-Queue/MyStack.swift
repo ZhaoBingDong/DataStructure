@@ -9,40 +9,38 @@
 import UIKit
 
 /// 数据结构之栈
-class MyStack {
+public class MyStack<T> {
 
-    private var stacks : [String]?
+    fileprivate var stacks : [T]?
     private var stacklength : Int = 0
     private var stackCapacity : Int = 0;
-    open var stackTop : Int = 0;
-    convenience init(_ capacity : Int) {
-        self.init()
+    public var stackTop : Int = 0;
+    init(_ capacity : Int) {
         stackCapacity = capacity;
         clearStacks()
-        
     }
     
     /// 栈是否为空
-    open func stackEmpty() -> Bool {
+    public func stackEmpty() -> Bool {
         return stacklength == 0
     }
     
     /// 栈是否为满
-    open func stackFull() -> Bool {
+    public func stackFull() -> Bool {
         return stacklength == stackCapacity
     }
     
     /// 清空栈所有元素
-    open func clearStacks() {
+    public func clearStacks() {
         
-        self.stacks = Array<String>(repeating: "", count: stackCapacity)
+        self.stacks = [T]()
         stacklength = 0
         stackTop    = 0
 
     }
     
     /// 遍历栈中所有元素
-    open func stackTraverse() {
+    public func stackTraverse() {
         
         if stackEmpty() {
             print("栈中没有元素");
@@ -56,23 +54,22 @@ class MyStack {
     }
     
     /// 入栈一个元素
-    open func push(_ element : String) -> Bool {
+    public func push(_ element : T) -> Bool {
         
         if stackFull() {
             return false
         } else {
-            
-            self.stacks?[stackTop] = element
+
+            self.stacks?.insert(element, at: stackTop)
             stackTop+=1;
             stacklength+=1;
-            
            return true
         }
         
     }
     
     /// 出栈一个元素
-    open func pop() -> String? {
+    open func pop() -> T? {
         
         if stackEmpty() {
             return nil;
