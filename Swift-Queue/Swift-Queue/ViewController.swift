@@ -16,8 +16,8 @@ class ViewController: UIViewController {
 ////            myStack()
 //        let age = 10
 //        print(1...5)
-//     
-        
+//
+
         
     }
     
@@ -123,6 +123,11 @@ class ViewController: UIViewController {
         dictionary.removeAll()
         let _ = dictionary.description
 
+
+       let result           =  dictionary["100"]
+        dictionary["200"]   = 110
+
+        print(dictionary.description)
 
     }
     

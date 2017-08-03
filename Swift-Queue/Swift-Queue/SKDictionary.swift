@@ -81,5 +81,17 @@ class  SKDictionary<K:Hashable,V> {
         }
     }
 
+    subscript(key:K) -> V?{
+
+        get{
+            return self.object(for: key)
+        }
+
+        set{
+            guard let newValue = newValue else{ return }
+            set(value: newValue, forKey: key)
+        }
+    }
+
 
 }
