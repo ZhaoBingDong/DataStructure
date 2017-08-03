@@ -69,7 +69,7 @@ public class MyStack<T> {
     }
     
     /// 出栈一个元素
-    open func pop() -> T? {
+    public func pop() -> T? {
         
         if stackEmpty() {
             return nil;
