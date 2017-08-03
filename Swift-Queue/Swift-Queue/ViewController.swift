@@ -104,6 +104,28 @@ class ViewController: UIViewController {
         
     }
     
+    func myDictionary() {
+
+        let dictionary = SKDictionary<String,Int>()
+        dictionary.set(value: 100, forKey: "200")
+        dictionary.set(value: 200, forKey: "200")
+        dictionary.set(value: 200, forKey: "400")
+        dictionary.set(value: 200, forKey: "500")
+        let _ = dictionary.description
+        dictionary.remove(forKey: "200")
+
+        if let num1 = dictionary.object(for: "400") {
+            print(num1)
+        }
+        dictionary.remove(forKey: "500")
+
+        print(dictionary.description)
+        dictionary.removeAll()
+        let _ = dictionary.description
+
+
+    }
+    
     
 }
 

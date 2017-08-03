@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D13FCC81F32FE350053DF22 /* SKDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D13FCC71F32FE350053DF22 /* SKDictionary.swift */; };
 		2D5F5D081E7630D10094D56B /* MyStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5F5D071E7630D10094D56B /* MyStack.swift */; };
 		2D5F5D0B1E76385B0094D56B /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5F5D091E76385B0094D56B /* StackViewController.swift */; };
 		2D5F5D0C1E76385B0094D56B /* StackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5F5D0A1E76385B0094D56B /* StackViewController.xib */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D13FCC71F32FE350053DF22 /* SKDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKDictionary.swift; sourceTree = "<group>"; };
 		2D5F5D071E7630D10094D56B /* MyStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStack.swift; sourceTree = "<group>"; };
 		2D5F5D091E76385B0094D56B /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		2D5F5D0A1E76385B0094D56B /* StackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StackViewController.xib; sourceTree = "<group>"; };
@@ -109,14 +111,15 @@
 		2DF4A8041E754194009E799C /* Swift-Queue */ = {
 			isa = PBXGroup;
 			children = (
-				2DF4A8641E755470009E799C /* MyQueue.swift */,
 				2DF4A8051E754194009E799C /* AppDelegate.swift */,
 				2DF4A8071E754194009E799C /* ViewController.swift */,
 				2D5F5D0D1E7644CC0094D56B /* QueueViewController.swift */,
 				2D5F5D0E1E7644CC0094D56B /* QueueViewController.xib */,
-				2D5F5D071E7630D10094D56B /* MyStack.swift */,
 				2D5F5D091E76385B0094D56B /* StackViewController.swift */,
 				2D5F5D0A1E76385B0094D56B /* StackViewController.xib */,
+				2DF4A8641E755470009E799C /* MyQueue.swift */,
+				2D5F5D071E7630D10094D56B /* MyStack.swift */,
+				2D13FCC71F32FE350053DF22 /* SKDictionary.swift */,
 				2DF4A8091E754194009E799C /* Main.storyboard */,
 				2DF4A80C1E754194009E799C /* Assets.xcassets */,
 				2DF4A80E1E754194009E799C /* LaunchScreen.storyboard */,
@@ -287,6 +290,7 @@
 				2DF4A8081E754194009E799C /* ViewController.swift in Sources */,
 				2D5F5D0F1E7644CC0094D56B /* QueueViewController.swift in Sources */,
 				2D5F5D0B1E76385B0094D56B /* StackViewController.swift in Sources */,
+				2D13FCC81F32FE350053DF22 /* SKDictionary.swift in Sources */,
 				2DF4A8061E754194009E799C /* AppDelegate.swift in Sources */,
 				2DF4A8651E755470009E799C /* MyQueue.swift in Sources */,
 			);
