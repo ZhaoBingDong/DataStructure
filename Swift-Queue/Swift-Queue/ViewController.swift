@@ -12,12 +12,9 @@ class ViewController: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-////       myQueueTest()
-////            myStack()
-//        let age = 10
-//        print(1...5)
-//
-
+        myQueueTest()
+        myDictionary()
+        myStack()
         
     }
     
@@ -38,43 +35,43 @@ class ViewController: UIViewController {
     /// 验证和测试队列的代码
     func myQueueTest() {
         
-//        // 环形队列 最大容量是4 根据先进先出原则进行取值操作
-//        let myQueue = MyQueue(capacity: 4)
-//        
-//        
-//        let _ =  myQueue.enQueue(10)
-//        let _ =  myQueue.enQueue(20)
-//        let _ =  myQueue.enQueue(30)
-//        let _ =  myQueue.enQueue(40)
-//        let _ =  myQueue.enQueue(50)
-//        // 查看队列的元素
-//        myQueue.queueTraverse()
-//        // 从队列头中取出一个元素
-//        var sum = myQueue.deQueue()
-//        
-//        print("出队一个元素 \(sum)")
-//        
-//        // 从队列头中取出一个元素
-//        
-//        sum = myQueue.deQueue()
-//        print("出队一个元素 \(sum)")
-//        
-//        myQueue.queueTraverse()
-//        
-//        myQueue.clearQueue()
-//        
-//        // 往队列中添加一个元素 插入到队列尾部位置
-//        let _ = myQueue.enQueue(60)
-//        
-//        myQueue.queueTraverse()
-//        
-//        // 从队列中取出一个元素
-//        sum = myQueue.deQueue()
-//        
-//        
-//        print("出队一个元素 \(sum)")
-//        
-//        myQueue.queueTraverse()
+        // 环形队列 最大容量是4 根据先进先出原则进行取值操作
+        let myQueue = MyQueue<Int>(capacity: 4)
+
+
+        let _ =  myQueue.enQueue(10)
+        let _ =  myQueue.enQueue(20)
+        let _ =  myQueue.enQueue(30)
+        let _ =  myQueue.enQueue(40)
+        let _ =  myQueue.enQueue(50)
+        // 查看队列的元素
+        myQueue.queueTraverse()
+        // 从队列头中取出一个元素
+        var sum = myQueue.deQueue()
+
+        print("出队一个元素 \(sum)")
+
+        // 从队列头中取出一个元素
+
+        sum = myQueue.deQueue()
+        print("出队一个元素 \(sum)")
+
+        myQueue.queueTraverse()
+
+        myQueue.clearQueue()
+
+        // 往队列中添加一个元素 插入到队列尾部位置
+        let _ = myQueue.enQueue(60)
+
+        myQueue.queueTraverse()
+
+        // 从队列中取出一个元素
+        sum = myQueue.deQueue()
+
+
+        print("出队一个元素 \(sum)")
+
+        myQueue.queueTraverse()
 
         
     }
@@ -117,18 +114,23 @@ class ViewController: UIViewController {
         if let num1 = dictionary.object(for: "400") {
             print(num1)
         }
+
         dictionary.remove(forKey: "500")
 
         print(dictionary.description)
         dictionary.removeAll()
         let _ = dictionary.description
 
-
-       let result           =  dictionary["100"]
+        // 下标语法从字典取值 根据 Key
+        if  let result           =  dictionary["100"] {
+            print(result)
+        }
+        // 下标语法 赋值 根据 Key,Value
         dictionary["200"]   = 110
 
-        print(dictionary.description)
+        print(dictionary)
 
+        print(dictionary.description)
     }
     
     

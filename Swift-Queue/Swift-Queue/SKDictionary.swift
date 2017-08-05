@@ -8,7 +8,7 @@
 
 import UIKit
 
-class  SKDictionary<K:Hashable,V> {
+class  SKDictionary<K:Hashable,V> : CustomStringConvertible {
 
     private typealias Tup = (key:K,value:V)
     private var tmp : [Tup]?
@@ -71,25 +71,23 @@ class  SKDictionary<K:Hashable,V> {
         self.tmp?.removeAll()
     }
 
-    public var description : String {
-        get {
-            if self.tmp!.count > 0 {
-                return self.tmp!.description
-            } else {
-                return "[:]"
-            }
-        }
-    }
-
     subscript(key:K) -> V?{
 
-        get{
+        get {
             return self.object(for: key)
         }
 
-        set{
+        set {
             guard let newValue = newValue else{ return }
             set(value: newValue, forKey: key)
+        }
+    }
+
+    public var description: String {
+        if self.tmp!.count > 0 {
+            return self.tmp!.description
+        } else {
+            return "[:]"
         }
     }
 
